@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="font_awesome/js/all.js"></script>
+  </head>
+  <body>
+
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: darkred;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="bootstrap.html">
+      <img src="f1.png" style="width: 50px; height: 50px; border-radius: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="bootstrap.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutr.html"><i class="fa-solid fa-person-circle-question"></i> About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html"><i class="fa-solid fa-route"></i> Drivers</a>
+        </li>
+        <a class="nav-link" href="testimonials.html"><i class="fa-solid fa-quote-left"></i> Feedback</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a href ="logout.html" class="text-decoration-none"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+  <style>
+    :root {
+  --primary-color: white;
+  --secondary-color: white;
+  --background-color: white;
+  --text-color: white;
+  --card-background: black;
+}
+
+body {
+  font-family: 'Gill Sans MT', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: Linear-gradient(to bottom, black, red);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background-image: url(blurr.jpg);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0 0 1rem 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    padding: 1.5rem;
+  }
+}
+
+  </style>
+
+</head>
+
+<body><br><br><br>
+
+<div class="container">
+        <h1>WHAT  YOU HAVE TO SAY!!</h1>
+        <ul class="testimonials">
+            <li class="testimonial">
+                <blockquote>"Stella identifies the missed points in 2024 that McLaren and Norris 'regret' amid Verstappen championship fight"</blockquote>
+                <cite> @whatawatt</cite>
+            </li>
+            <li class="testimonial">
+                <blockquote>"Perez admits ‘nothing really worked’ in Sao Paulo GP as Horner brands Mexican’s first-lap spin ‘annoying’"</blockquote>
+                <cite> @mwehehehh</cite>
+            </li>
+            <li class="testimonial">
+                <blockquote>"I can’t overstate how difficult Interlagos is to drive in the rain – Verstappen’s epic win was his best wet race yet"</blockquote>
+                <cite> @killmehh</cite>
+            </li>
+            <li class="testimonial">
+                <blockquote>"The key benefit of McLaren’s new rear wing in Brazil that couldn’t be utilised in the race"</blockquote>
+                <cite> @rorororoorr</cite>
+            </li>
+            <li class="testimonial">
+                <blockquote>"‘The bumpiest ride ever’ – Hamilton offers blunt assessment after salvaging point from tough Sao Paulo GP weekend"</blockquote>
+                <cite> @idkwhomeis</cite>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
