@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheree Mae M. Gresones  -  Palamunin mwehehe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="font_awesome/js/all.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: black;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="bootstrap.html">
+      <img src="f1.png" style="width: 50px; height: 50px; border-radius: 50px;">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="bootstrap.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutr.html"><i class="fa-solid fa-user"></i> About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html"><i class="fa-solid fa-route"></i> Drivers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="testimonials.html"><i class="fa-solid fa-quote-left"></i> Feedback</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a href ="logout.html" class="text-decoration-none"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      </span>
+    </div>
+  </div>
+</nav>
+    <style>
+        body {
+            font-family: Time New Roman;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .dock {
+      display: flex;
+      gap: 15px;
+    }
+
+   
+    .dock a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      transition: transform 0.2s ease;
+    }
+
+    .dock a img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+
+    .dock a:hover {
+      transform: scale(1.4);
+    }
+
+   
+    .dock a:hover ~ a {
+      transform: scale(1.1);
+    }
+    .dock a ~ a:hover {
+      transform: scale(1.3);
+    }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .job-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        ul {
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header><br><br><br>
+        <img src="catt.jpg" alt="catt" class="profile-img">
+        <h1>Sheree Mae M. Gresones</h1>
+        <p>Full-Time Palamunin</p>
+        <div class="dock">
+          <a href="https://github.com/hakku-rei"><img src="snap.avif" alt="Facebook"></a>
+          <a href="https://www.facebook.com/siriit.igit?mibextid=LQQJ4d"><img src="twt.jpg" alt="Twitter"></a>
+          <a href="https://www.instagram.com/sirit.igit/profilecard/?igsh=MTdtd3d3N2doeHk5MQ=="><img src="yt.jpg" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Sheree Mae M. Gresones, a passionate Full Stack Developer with over 5 years of experience in building
+                web applications. I specialize in JavaScript, React, Node.js, and cloud technologies. When I'm not
+                coding, you can find me hiking or reading sci-fi novels.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <p class="job-title">Senior Developer</p>
+                <p class="job-date">TechCorp Inc. | 2020 - Present</p>
+                <ul>
+                    <li>Led a team of 5 developers in building a cloud-based SaaS platform</li>
+                    <li>Implemented CI/CD pipelines, reducing deployment time by 50%</li>
+                    <li>Mentored junior developers and conducted code reviews</li>
+                </ul>
+            </div>
+            <div class="job">
+                <p class="job-title">Full Stack Developer</p>
+                <p class="job-date">WebSolutions LLC | 2017 - 2020</p>
+                <ul>
+                    <li>Developed and maintained multiple client websites using React and Node.js</li>
+                    <li>Optimized database queries, improving application performance by 30%</li>
+                    <li>Collaborated with UX designers to implement responsive designs</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Education</h2>
+            <div class="job">
+                <p class="job-title">College Degree</p>
+                <p class="job-date">School year | 2022 - Present</p>
+                <ul>
+                    <li>Led a team of 5 developers in building a cloud-based SaaS platform</li>
+                    <li>Implemented CI/CD pipelines, reducing deployment time by 50%</li>
+                    <li>Mentored junior developers and conducted code reviews</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <div class="row justify-content-center" style ="margin-top: 100px;">
+  <div class="col-md-4 text-center">
+    <h6> <i class="fa-regular fa-copyright text-black"></i> Copyright <b>  IT2F Property</b> All Rights Reserved</h6><br>
+    <p> Designed by <a href="https://www.facebook.com/siriit.igit?mibextid=LQQJ4d " class="text-decoration-none text-black"c>Sheree Mae M. Gresones
+    </a></p>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
